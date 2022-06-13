@@ -169,12 +169,12 @@ module2 m2(.input(C));
 
 ```verilog
 // 4bit
-input [3:0] array;
+input [3:0] array = 0'b0101;
 
-array[0];
-array[1];
-array[2];
-array[3];
+array[0]; // 1
+array[1]; // 0
+array[2]; // 1
+array[3]; // 0
 ```
 
 値での変更方法;
